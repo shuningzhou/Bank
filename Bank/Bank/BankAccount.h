@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *DebitAmountLessThanZeroMessage;
+extern NSString *DebitAmountExceedsBalanceMessage;
+
 @interface BankAccount : NSObject{
     NSLock* _balanceLock;
 }

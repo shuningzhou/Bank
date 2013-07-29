@@ -26,12 +26,14 @@ NSString const *DebitAmountLessThanZeroMessage = @"Debit amount will result in a
     [_balanceLock lock];
     double newBalance = self.balance - fabs(amount);
     if (amount > self.balance) {
-        [NSException raise:@"ArgumentOutOfRangeException" format:@"Amount = %f. %@", amount, DebitAmountExceedsBalanceMessage];
+        [NSException raise:@"ArgumentOutOfRangeException" format:@"%f|%@", amount, DebitAmountExceedsBalanceMessage];
     }
     if (newBalance < 0) {
-        [NSException raise:@"ArgumentOutOfRangeException" format:@"Amount = %f. %@", amount, DebitAmountLessThanZeroMessage];
+        [NSException raise:@"ArgumentOutOfRangeException" format:@"%f|%@", amount, DebitAmountLessThanZeroMessage];
     }
+    
     [NSThread sleepForTimeInterval:0.1f];
+    self.balance = newBalance;
     [_balanceLock unlock];
 }
 
