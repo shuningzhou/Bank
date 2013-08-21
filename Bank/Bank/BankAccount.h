@@ -12,11 +12,11 @@ extern NSString *DebitAmountLessThanZeroMessage;
 extern NSString *DebitAmountExceedsBalanceMessage;
 
 @interface BankAccount : NSObject{
-    NSLock* _balanceLock;
 }
 
 @property(strong)NSString *name;
 @property(assign)double balance;
+@property(strong) NSLock* balanceLock;
 
 -(void)Debit:(double)amount;
 -(void)Credit:(double)amount;

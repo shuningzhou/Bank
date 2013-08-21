@@ -24,6 +24,8 @@
 		769096D2178CDDD100386279 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 769096D1178CDDD100386279 /* BankAccount.m */; };
 		769096D6178CE5C500386279 /* FileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 769096D5178CE5C500386279 /* FileWriter.m */; };
 		769096D9178DCF0500386279 /* BankAccountWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 769096D8178DCF0500386279 /* BankAccountWriter.m */; };
+		9ADF1E9617C4902B00BDAFB0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADF1E8E17C4902B00BDAFB0 /* libOCMock.a */; };
+		9ADF1E9717C491D700BDAFB0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADF1E8E17C4902B00BDAFB0 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,13 @@
 		769096D5178CE5C500386279 /* FileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWriter.m; sourceTree = "<group>"; };
 		769096D7178DCF0500386279 /* BankAccountWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountWriter.h; sourceTree = "<group>"; };
 		769096D8178DCF0500386279 /* BankAccountWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountWriter.m; sourceTree = "<group>"; };
+		9ADF1E8E17C4902B00BDAFB0 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		9ADF1E9017C4902B00BDAFB0 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		9ADF1E9117C4902B00BDAFB0 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		9ADF1E9217C4902B00BDAFB0 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		9ADF1E9317C4902B00BDAFB0 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		9ADF1E9417C4902B00BDAFB0 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		9ADF1E9517C4902B00BDAFB0 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,7 @@
 				7690969B178CDD4100386279 /* UIKit.framework in Frameworks */,
 				7690969D178CDD4100386279 /* Foundation.framework in Frameworks */,
 				7690969F178CDD4100386279 /* CoreGraphics.framework in Frameworks */,
+				9ADF1E9617C4902B00BDAFB0 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				769096B9178CDD4100386279 /* SenTestingKit.framework in Frameworks */,
 				769096BA178CDD4100386279 /* UIKit.framework in Frameworks */,
 				769096BB178CDD4100386279 /* Foundation.framework in Frameworks */,
+				9ADF1E9717C491D700BDAFB0 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +103,7 @@
 		7690968E178CDD4100386279 = {
 			isa = PBXGroup;
 			children = (
+				9ADF1E8D17C4902B00BDAFB0 /* iOS */,
 				769096A0178CDD4100386279 /* Bank */,
 				769096BE178CDD4100386279 /* BankTests */,
 				76909699178CDD4100386279 /* Frameworks */,
@@ -167,6 +179,28 @@
 				769096C1178CDD4100386279 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9ADF1E8D17C4902B00BDAFB0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9ADF1E8E17C4902B00BDAFB0 /* libOCMock.a */,
+				9ADF1E8F17C4902B00BDAFB0 /* OCMock */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9ADF1E8F17C4902B00BDAFB0 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				9ADF1E9017C4902B00BDAFB0 /* NSNotificationCenter+OCMAdditions.h */,
+				9ADF1E9117C4902B00BDAFB0 /* OCMArg.h */,
+				9ADF1E9217C4902B00BDAFB0 /* OCMConstraint.h */,
+				9ADF1E9317C4902B00BDAFB0 /* OCMock.h */,
+				9ADF1E9417C4902B00BDAFB0 /* OCMockObject.h */,
+				9ADF1E9517C4902B00BDAFB0 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,7 +421,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bank/Bank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/user/include\"";
 				INFOPLIST_FILE = "Bank/Bank-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,7 +437,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bank/Bank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/user/include\"";
 				INFOPLIST_FILE = "Bank/Bank-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,7 +458,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bank/Bank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/iOS\"";
 				INFOPLIST_FILE = "BankTests/BankTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/iOS/libOCMock.a\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -431,7 +484,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bank/Bank-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/iOS\"";
 				INFOPLIST_FILE = "BankTests/BankTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/iOS/libOCMock.a\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
